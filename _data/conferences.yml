@@ -1715,6 +1715,8 @@
   end_date: 2019-07-27
   url: http://rubyconf.nairuby.org/2019
   twitter: nairubyke
+  cfp_phrase: CFP closes
+  cfp_date: 2019-06-01
 
 - name: Ruby Conf Taiwan 2019
   location: Taipei, Taiwan
@@ -1737,6 +1739,8 @@
   end_date: 2019-08-10
   url: https://www.deccanrubyconf.org/
   twitter: deccanrubyconf
+  cfp_phrase: CFP closes
+  cfp_date: 2019-05-31
 
 - name: GrillRB 2019
   location: Wrocław, Poland
@@ -1768,6 +1772,8 @@
   end_date: 2019-09-21
   url: https://rubyconf.co
   twitter: rubyconfco
+  cfp_phrase: CFP closes
+  cfp_date: 2019-06-15
 
 - name: RubyRussia
   location: Moscow, Russia
@@ -1783,6 +1789,8 @@
   end_date: 2019-09-29
   url: https://ruby.id/conf/2019/
   twitter: rubyconfid
+  cfp_phrase: CFP closes
+  cfp_date: 2019-08-11
 
 - name: Ancient City Ruby
   location: Jacksonville Beach, FL
@@ -1791,6 +1799,8 @@
   url: http://ancientcityruby.com/
   twitter: ancientcityruby
   video_link: https://www.youtube.com/playlist?list=PLrjohaqTgNJODBm0-VFsXvUFx1oidLyKa
+  cfp_phrase: CFP closes
+  cfp_date: 2019-07-31
 
 - name: Pivorak Conf. 4.0
   location: Lviv, Ukraine
@@ -1829,6 +1839,8 @@
   url: https://rubyconf.org
   twitter: rubyconf
   video_link: https://www.youtube.com/playlist?list=PLE7tQUdRKcyZDE8nFrKaqkpd-XK4huygU
+  cfp_phrase: CFP closes
+  cfp_date: 2019-08-07
 
 - name: RubyConfBR
   location: Sao Paulo, BR
@@ -1844,6 +1856,8 @@
   url: http://birminghamonrails.com
   twitter: bhmonrails
   video_link: https://www.youtube.com/playlist?&list=PLE7tQUdRKcyYC2lZzwTvEeJXghm4Ym4ZX
+  cfp_phrase: CFP closes
+  cfp_date: 2019-10-06
 
 - name: Rubyfuza
   location: Cape Town, South Africa
@@ -1851,6 +1865,8 @@
   end_date: 2020-02-08
   url: https://www.rubyfuza.org
   twitter: rubyfuza
+  cfp_phrase: "CFP closes"
+  cfp_date: 2019-12-01
 
 - name: ParisRB Conf
   location: Paris, France
@@ -1875,6 +1891,13 @@
   url: https://2020.wrocloverb.com
   twitter: wrocloverb
   status: Canceled
+
+- name: RubyKaigi
+  location: Nagano, Japan
+  start_date: 2020-04-09
+  end_date: 2020-04-11
+  url: https://rubykaigi.org/2020
+  twitter: rubykaigi
 
 - name: Ruby Retreat NZ 2020
   location: Mt Cheeseman, near Christchurch, New Zealand
@@ -2832,3 +2855,5 @@
   url: https://www.railsconf.com
   twitter: railsconf
   mastodon: https://ruby.social/@railsconf
+  cfp_phrase: CFP closes
+  cfp_date: 2020-02-01
