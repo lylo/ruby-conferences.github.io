@@ -8,31 +8,30 @@
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/feed.xml</id>
 
-  {% assign now = site.time | date: '%s' | plus: 0 %}
-  {% for event in site.data.conferences %}
-    {% assign start_date = event.start_date | date: '%s' | plus: 0 %}
-    {% if start_date > now %}
-    <entry>
-      <updated>{{ event.updated }}</updated>
+  {% assign last_10_events = site.data.conferences | reverse | slice: 0, 10 %}
+  {% for event in last_10_events %}
+    {% if event.announced_at %}
+      <entry>
+        <updated>{{ event.announced_at | date: "%Y-%m-%dT%H:%M:%S%z" }}</updated>
 
-      <title>{{ event.name }}</title>
-      {% if event.url %}
-      <id>{{ event.url }}</id>
-      {% endif %}
-      <content type="html">
-      <h1>{{ event.name }}</h1>
-      <ul>
-        <li>{% include event-date.html %}</li>
-        <li>{{ event.location }}</li>
-        {% if event.twitter %}
-        <li><a href="https://twitter.com/{{ event.twitter }}">@{{ event.twitter }}</a></li>
+        <title>{{ event.name }}</title>
+        {% if event.url %}
+        <id>{{ event.url }}</id>
         {% endif %}
-        {% if event.video_link %}
-        <li><a href="{{ event.video_link }}">Event Videos</a></li>
-        {% endif %}
-      </ul>
-      </content>
-    </entry>
+        <content type="html">
+        <h1>{{ event.name }}</h1>
+        <ul>
+          <li>{% include event-date.html %}</li>
+          <li>{{ event.location }}</li>
+          {% if event.twitter %}
+          <li><a href="https://twitter.com/{{ event.twitter }}">@{{ event.twitter }}</a></li>
+          {% endif %}
+          {% if event.video_link %}
+          <li><a href="{{ event.video_link }}">Event Videos</a></li>
+          {% endif %}
+        </ul>
+        </content>
+      </entry>
     {% endif %}
   {% endfor %}
 </feed>
